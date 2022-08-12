@@ -1,3 +1,5 @@
+package Clase5;
+
 public class C5_usuario {
     private String nombre;
     private String clave;
@@ -25,7 +27,7 @@ public class C5_usuario {
 
     @Override
     public String toString() {
-        return "C5_usuario{" +
+        return "Clase5.C5_usuario{" +
                 "nombre='" + nombre + '\'' +
                 ", clave='" + clave + '\'' +
                 ", puntaje=" + puntaje +

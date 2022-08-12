@@ -1,3 +1,5 @@
+package Clase5;
+
 public class C5_cliente {
     private Integer numeroCliente;
     private String nombre;
@@ -39,7 +41,7 @@ public class C5_cliente {
 
     @Override
     public String toString() {
-        return "C5_cliente{" +
+        return "Clase5.C5_cliente{" +
                 "numeroCliente=" + numeroCliente +
                 ", nombre='" + nombre + '\'' +
                 ", deuda=" + deuda +

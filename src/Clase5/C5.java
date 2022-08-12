@@ -1,3 +1,5 @@
+package Clase5;
+
 public class C5 {
     public static void main(String[] args) {
         //clase 5
@@ -15,8 +17,14 @@ public class C5 {
         System.out.println(C5_cliente.getBanco());
 
         C5_usuario primerJugador = new C5_usuario("Nico", "1234");
+        System.out.println(primerJugador);
+
         primerJugador.aumentarPuntaje();
+        System.out.println(primerJugador);
+
         primerJugador.bonus(5);
+        System.out.println(primerJugador);
+
         primerJugador.subirNivel();
         System.out.println(primerJugador);
     }
