@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class Cliente{
+-nombre:String
+-telefono:String
+-domicilio:String
++Cliente(nombre:String, telefono:String, domicilio:String)
++realizarPedido(articulo:Articulo)
+}
+class Pedido{
+-fecha:LocalDate
+-codigo:int
++Pedido(fecha:LocalDate, codigo:int)
++recibirPedido(cliente:Cliente)
++entregarPedido(cliente:Cliente)
+}
+class Articulo{
+-nombre:String
+-precio:double
++Articulo(nombre:String, precio:double)
++setArticulo(nombre:String, precio:double)
+}
+Cliente --> Pedido
+Pedido--> Articulo
+@enduml
